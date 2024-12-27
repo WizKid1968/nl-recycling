@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node --max-old-space-size=4096 vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite build && vite preview"
+    "start": "node --max-old-space-size=4096 vite build && vite preview"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.26.0",
